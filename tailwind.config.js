@@ -12,12 +12,13 @@ module.exports = {
     colors: {
       transparent: "transparent",
       current: "currentColor",
+      white: "hsl(0, 0%, 100%)",
       neutral: colors.neutral,
       sky: colors.sky,
     },
     fontFamily: {
       display: ["Montserrat"],
-      body: ["Fraunces"],
+      body: ["Fraunces", "Outfit"],
     },
     extend: {
       colors: {
@@ -28,8 +29,10 @@ module.exports = {
         neutral: {
           "dark-blue": "hsl(212, 21%, 14%)",
           "dark-grayish-blue": "hsl(228, 12%, 48%)",
-          white: "hsl(0, 0%, 100%)",
         },
+        "qrc-light-gray": "hsl(212, 45%, 89%)",
+        "qrc-grayish-blue": "hsl(220, 15%, 55%)",
+        "qrc-dark-blue": "hsl(218, 44%, 22%)",
       },
       screens: {
         mobile: "375px",
