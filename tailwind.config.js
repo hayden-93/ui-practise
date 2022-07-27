@@ -1,7 +1,20 @@
+const colors = require("tailwindcss/colors");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./pages/**/*.{ts,tsx}", "./src/components/**/*.{ts,tsx}"],
   theme: {
+    screens: {
+      t: "768px",
+      d: "1024px",
+      max: "1280px",
+    },
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      neutral: colors.neutral,
+      sky: colors.sky,
+    },
     fontFamily: {
       display: ["Montserrat"],
       body: ["Fraunces"],
