@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-page-custom-font */
+import type { ReactNode } from "react";
+
 import Head from "next/head";
-import { ReactNode } from "react";
 
 import { Image, Link } from "../src/components";
 
