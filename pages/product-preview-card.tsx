@@ -12,7 +12,7 @@ interface ButtonProps {
 }
 
 export const Button = ({ children, className }: ButtonProps) => {
-  const classes = ["font-display rounded-lg px-16 py-3 md:px-4", className]
+  const classes = ["text-white font-display rounded-lg py-3 md:px-4", className]
     .join(" ")
     .trim();
   return <button className={classes}>{children}</button>;
@@ -92,7 +92,7 @@ const ProductPreviewCard = () => {
         </nav>
         <div className="bg-primary-cream flex h-screen justify-center items-center">
           <div className="max-w-screen-mobile mx-auto p-6 md:max-w-screen-md">
-            <div className="bg-neutral-white rounded-lg md:grid md:grid-cols-2">
+            <div className="bg-white rounded-lg md:grid md:grid-cols-2">
               <ProductImage
                 src="/assets/img/projects/product-preview-card/product-mobile.jpg"
                 alt="Perfume bottle"
@@ -124,7 +124,7 @@ const ProductPreviewCard = () => {
                     $169.99
                   </Price>
                 </div>
-                <div className="flex justify-center py-2 bg-primary-dark-cyan text-neutral-white font-body font-medium rounded-lg space-x-2 md:px-4">
+                <div className="flex justify-center py-2 bg-primary-dark-cyan font-body font-medium rounded-lg space-x-2 md:px-4">
                   <Image
                     width={24}
                     height={24}
