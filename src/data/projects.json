@@ -12,5 +12,12 @@
     "description": "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
     "src": "/assets/img/projects/qr-code-card/preview.jpg",
     "alt": "QR code card project"
+  },
+  {
+    "href": "/nft-preview-card",
+    "title": "NFT Preview Card",
+    "description": "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
+    "src": "/assets/img/projects/nft-preview-card/preview.jpg",
+    "alt": "NFT preview card project"
   }
 ]

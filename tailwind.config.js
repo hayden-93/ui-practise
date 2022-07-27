@@ -25,10 +25,15 @@ module.exports = {
         primary: {
           "dark-cyan": "hsl(158, 36%, 37%)",
           cream: "hsl(30, 38%, 92%)",
+          "nft-soft-blue": "hsl(215, 51%, 70%)",
+          "nft-cyan": "hsl(178, 100%, 50%)",
         },
         neutral: {
           "dark-blue": "hsl(212, 21%, 14%)",
           "dark-grayish-blue": "hsl(228, 12%, 48%)",
+          "nft-main-dark-blue": "hsl(217, 54%, 11%)",
+          "nft-card-dark-blue": "hsl(216, 50%, 16%)",
+          "nft-line-dark-blue": "hsl(215, 32%, 27%)",
         },
         "qrc-light-gray": "hsl(212, 45%, 89%)",
         "qrc-grayish-blue": "hsl(220, 15%, 55%)",
