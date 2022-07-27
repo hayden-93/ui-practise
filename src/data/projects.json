@@ -5,5 +5,12 @@
     "description": "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects.",
     "src": "/assets/img/projects/product-preview-card/preview.jpg",
     "alt": "Product preview card project"
+  },
+  {
+    "href": "/qr-code-card",
+    "title": "QR Code Card",
+    "description": "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
+    "src": "/assets/img/projects/qr-code-card/preview.jpg",
+    "alt": "QR code card project"
   }
 ]
