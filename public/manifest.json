@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "background_color": "#fafafa",
+  "categories": [
+    "education",
+    "personal",
+    "development",
+    "coding",
+    "programming"
+  ],
+  "description": "A list of projects tailored around Front End development.",
+  "dir": "ltr",
+  "display": "standalone",
+  "icons": [],
+  "id": "ui-practise",
+  "lang": "en-GB",
+  "name": "UI Practise",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "scope": "/",
+  "screenshots": [],
+  "short_name": "UI Practise",
+  "start_url": "/",
+  "theme_color": "#fafafa"
+}
