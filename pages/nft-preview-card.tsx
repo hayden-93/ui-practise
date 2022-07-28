@@ -12,7 +12,7 @@ interface CardProps {
 
 export const Card = ({ children, className }: CardProps) => {
   const classes = [
-    "max-w-screen-mobile mx-auto bg-neutral-nft-card-dark-blue shadow-2xl p-6 rounded-xl space-y-4 group",
+    "group max-w-screen-mobile mx-auto bg-neutral-nft-card-dark-blue shadow-2xl p-6 rounded-xl space-y-4 hover:cursor-pointer",
     className,
   ]
     .join(" ")
@@ -39,7 +39,7 @@ interface CardTitleProps {
 
 export const CardTitle = ({ children, className }: CardTitleProps) => {
   const classes = [
-    "text-2xl font-bold text-white hover:text-primary-nft-cyan hover:cursor-pointer group:hover",
+    "text-2xl font-bold text-white group-hover:text-primary-nft-cyan",
     className,
   ]
     .join(" ")
@@ -219,7 +219,7 @@ const NFTPreviewCard = () => {
               <div className="self-center font-light">
                 <span className="text-primary-nft-soft-blue">
                   Creation of{" "}
-                  <span className="text-white hover:text-primary-nft-cyan hover:cursor-pointer">
+                  <span className="text-white group-hover:text-primary-nft-cyan">
                     Jules Wyvern
                   </span>
                 </span>
