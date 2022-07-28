@@ -12,38 +12,69 @@ const NFTPreviewCard = () => {
           rel="stylesheet"
         />
       </Head>
-      <div className="max-w-screen-max mx-auto">
+      <div>
         <nav className="py-6 px-4">
           <Link href="/">Back to Projects</Link>
         </nav>
-        <div className="max-w-screen-mobile mx-auto h-screen p-6 bg-neutral-nft-main-dark-blue">
-          <div className="bg-neutral-nft-card-dark-blue p-6 rounded-xl">
-            <div className="">
-              <Image
-                src="/assets/img/projects/nft-preview-card/image-equilibrium.jpg"
-                alt="Equilibrium Logo"
-                width={600}
-                height={600}
-                className="rounded-xl"
-              />
-            </div>
-            <div className="text-white">
-              <h3>Equilibrium #3429</h3>
-              <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div>
+          <div className="max-w-screen-max mx-auto bg-neutral-nft-main-dark-blue h-screen py-14 px-6">
+            <div className="max-w-screen-mobile mx-auto bg-neutral-nft-card-dark-blue shadow-2xl p-6 rounded-xl space-y-4">
               <div>
-                <div>
-                  <Image src="" alt="" width={24} height={24} className="" />
-                  <span>0.041 ETH</span>
-                </div>
-                <div>
-                  <Image src="" alt="" width={24} height={24} className="" />
-                  <span>3 days left</span>
-                </div>
+                <Image
+                  src="/assets/img/projects/nft-preview-card/image-equilibrium.jpg"
+                  alt="Equilibrium Logo"
+                  width={600}
+                  height={600}
+                  className="rounded-lg"
+                />
               </div>
-              <hr />
-              <div>
-                <Image src="" alt="" width={24} height={24} className="" />
-                <span>Creation of Jules Wyvern</span>
+              <div className="font-body space-y-4">
+                <h3 className="text-2xl font-bold text-white hover:text-primary-nft-cyan hover:cursor-pointer">
+                  Equilibrium #3429
+                </h3>
+                <p className="text-md text-primary-nft-soft-blue font-light">
+                  Our Equilibrium collection promotes balance and calm.
+                </p>
+                <div className="flex justify-between">
+                  <div className="flex space-x-2">
+                    <Image
+                      src="/assets/icons/projects/nft-preview-card/icon-ethereum.svg"
+                      alt="Ethereum logo"
+                      width={11}
+                      height={18}
+                    />
+                    <span className="text-primary-nft-cyan font-semibold">
+                      0.041 ETH
+                    </span>
+                  </div>
+                  <div className="flex space-x-2">
+                    <Image
+                      src="/assets/icons/projects/nft-preview-card/icon-clock.svg"
+                      alt="Clock icon"
+                      width={16}
+                      height={16}
+                    />
+                    <span className="text-primary-nft-soft-blue font-light">
+                      3 days left
+                    </span>
+                  </div>
+                </div>
+                <hr className="text-neutral-nft-line-dark-blue" />
+                <div className="flex space-x-4">
+                  <Image
+                    src="/assets/img/projects/nft-preview-card/image-avatar.png"
+                    alt="Avatar image"
+                    width={32}
+                    height={32}
+                    className="border border-white rounded-full"
+                  />
+                  <div className="self-center font-light">
+                    <span className="text-primary-nft-soft-blue ">
+                      Creation of{" "}
+                      <span className="text-white">Jules Wyvern</span>
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

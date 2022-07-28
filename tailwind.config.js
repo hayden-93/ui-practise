@@ -13,6 +13,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       white: "hsl(0, 0%, 100%)",
+      black: "hsl(0, 90%, 0%)",
       neutral: colors.neutral,
       sky: colors.sky,
     },
