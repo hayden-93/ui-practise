@@ -94,14 +94,14 @@ const ProductPreviewCard = () => {
           <div className="max-w-screen-mobile mx-auto p-6 md:max-w-screen-md">
             <div className="bg-white rounded-lg md:grid md:grid-cols-2">
               <ProductImage
-                src="/assets/img/projects/product-preview-card/product-mobile.jpg"
+                src="/assets/img/projects/product-preview-card/product-mobile.jpeg"
                 alt="Perfume bottle"
                 width={480}
                 height={686}
                 className="md:hidden"
               />
               <ProductImage
-                src="/assets/img/projects/product-preview-card/product-desktop.jpg"
+                src="/assets/img/projects/product-preview-card/product-desktop.jpeg"
                 alt="Perfume bottle"
                 width={600}
                 height={900}

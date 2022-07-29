@@ -173,7 +173,7 @@ const NFTPreviewCard = () => {
         <Card>
           <div className="relative rounded-lg overflow-hidden">
             <Image
-              src="/assets/img/projects/nft-preview-card/image-equilibrium.jpg"
+              src="/assets/img/projects/nft-preview-card/image-equilibrium.jpeg"
               alt="Equilibrium Logo"
               width={600}
               height={600}
