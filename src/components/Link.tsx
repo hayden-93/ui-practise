@@ -11,7 +11,7 @@ interface LinkProps extends NextLinkProps {
 export const Link = forwardRef<HTMLAnchorElement, PropsWithChildren<LinkProps>>(
   ({ children, className, ...props }, forwardedRef) => (
     <NextLink ref={forwardedRef} {...props}>
-      <a>{children}</a>
+      <a className={className}>{children}</a>
     </NextLink>
   )
 );
