@@ -1,8 +1,9 @@
 import type { NextPage } from "next";
+import type { ImageProps } from "next/future/image";
+
 import { memo } from "react";
 
 import { Image, Link } from "../src/components";
-
 import projects from "../src/data/projects.json";
 
 interface PreviewCardProps {
@@ -10,56 +11,80 @@ interface PreviewCardProps {
   description: string;
   src: string;
   title: string;
+  priority?: boolean;
+  placeholder?: ImageProps["placeholder"];
+  blurDataURL?: ImageProps["blurDataURL"];
 }
 
-const PreviewCardBase = ({
+const ProjectPreviewCardBase = ({
   alt,
   description,
   src,
   title,
+  priority,
+  placeholder = "blur",
+  blurDataURL,
 }: PreviewCardProps) => {
   return (
-    <div>
+    <article aria-labelledby="project-title" className="group">
       <div className="overflow-hidden">
         <Image
           src={src}
           alt={alt}
-          width={416}
-          height={234}
-          className="transition-all ease-in-out delay-150 duration-300 rounded-xl group-hover:scale-125"
+          width={639}
+          height={359}
+          quality={50}
+          priority={priority}
+          placeholder={placeholder}
+          blurDataURL={blurDataURL}
+          className="transition-all ease-in delay-150 duration-300 rounded-xl group-hover:scale-125"
         />
       </div>
       <div className="text-neutral-600 p-5 space-y-3">
-        <h2 className="text-2xl font-bold">{title}</h2>
-        <p className="text-base font-normal">{description}</p>
+        <h2 id="project-title" className="text-xl d:text-2xl font-bold">
+          {title}
+        </h2>
+        <p className="text-base text-neutral-500">{description}</p>
       </div>
-    </div>
+    </article>
   );
 };
 
-const PreviewCard = memo(PreviewCardBase);
+const ProjectPreviewCard = memo(ProjectPreviewCardBase);
 
 const Home: NextPage = () => {
   return (
-    <div className="max-w-screen-max mx-auto">
-      <h1 className="text-5xl text-neutral-900 font-semibold py-24 text-center">
-        UI Practise
+    <section className="max-w-screen-max mx-auto last:pb-16 t:last:pb-24 d:last:pb-32">
+      <h1 className="text-3xl t:text-4xl d:text-5xl text-neutral-900 font-semibold text-center py-16 t:py-24 d:py-32">
+        Front End Projects
       </h1>
-      <ul className="grid gap-8 grid-cols-1 t:grid-cols-2 d:grid-cols-3">
-        {projects.map(({ alt, description, href, src, title }) => (
-          <li key={href} className="group">
-            <Link href={href}>
-              <PreviewCard
-                src={src}
-                alt={alt}
-                description={description}
-                title={title}
-              />
-            </Link>
-          </li>
-        ))}
+      <ul className="grid gap-4 t:gap-6 d:gap-8 grid-cols-1 t:grid-cols-2 d:grid-cols-3">
+        {projects.map(
+          ({
+            alt,
+            description,
+            href,
+            src,
+            title,
+            priority = false,
+            blurDataURL,
+          }) => (
+            <li key={href}>
+              <Link href={href}>
+                <ProjectPreviewCard
+                  src={src}
+                  alt={alt}
+                  description={description}
+                  title={title}
+                  priority={priority}
+                  blurDataURL={blurDataURL}
+                />
+              </Link>
+            </li>
+          )
+        )}
       </ul>
-    </div>
+    </section>
   );
 };
 
