@@ -11,7 +11,7 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main className="max-w-screen-max mx-auto w-full flex-1">{children}</main>
       <Footer />
     </>
   );

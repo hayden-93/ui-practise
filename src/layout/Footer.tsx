@@ -45,8 +45,8 @@ const links = [
 export const Footer = () => {
   return (
     <footer className="bg-neutral-100 -mx-6">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
-        <div className="flex justify-center space-x-6 md:order-2">
+      <section className="max-w-screen-max mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+        <nav className="flex justify-center space-x-6 md:order-2">
           {links.map(({ href, label, icon: Icon }) => (
             <Link
               key={href}
@@ -57,14 +57,13 @@ export const Footer = () => {
               <Icon aria-hidden="true" className="h-6 w-6" />
             </Link>
           ))}
-        </div>
-
+        </nav>
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-center text-base text-neutral-600">
             &copy; {new Date().getFullYear()} Hayden Buckley-Smith
           </p>
         </div>
-      </div>
+      </section>
     </footer>
   );
 };

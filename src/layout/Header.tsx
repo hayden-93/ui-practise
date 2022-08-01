@@ -7,7 +7,7 @@ const links = [
 
 export const Header = () => {
   return (
-    <header className="max-w-screen-max mx-auto py-6">
+    <header className="w-full max-w-screen-max mx-auto py-6">
       <nav className="flex items-center justify-between text-neutral-600">
         <Link
           href="/"
