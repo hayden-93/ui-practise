@@ -13,7 +13,7 @@ interface CardProps {
 
 export const Card = ({ children, className }: CardProps) => {
   const classes = clsx(
-    "max-w-screen-mobile mx-auto rounded-xl space-y-4 bg-white",
+    "max-w-screen-mobile mx-auto rounded-xl bg-white",
     className
   );
 
@@ -26,7 +26,7 @@ interface CardContentProps {
 }
 
 export const CardContent = ({ children, className }: CardContentProps) => {
-  const classes = clsx("", className);
+  const classes = clsx("text-center px-6 py-6 space-y-6", className);
 
   return <div className={classes}>{children}</div>;
 };
@@ -46,7 +46,7 @@ export const CardImage = ({
   src,
   width,
 }: CardImageProps) => {
-  const classes = clsx("", className);
+  const classes = clsx("rounded-t-xl", className);
 
   return (
     <Image
@@ -65,7 +65,7 @@ interface CardTitleProps {
 }
 
 export const CardTitle = ({ children, className }: CardTitleProps) => {
-  const classes = clsx("", className);
+  const classes = clsx("text-xl font-bold", className);
 
   return <h2 className={classes}>{children}</h2>;
 };
@@ -79,7 +79,10 @@ export const CardDescription = ({
   children,
   className,
 }: CardDescriptionProps) => {
-  const classes = clsx("", className);
+  const classes = clsx(
+    "text-sm font-normal text-neutral-order-desaturated-blue",
+    className
+  );
 
   return <p className={classes}>{children}</p>;
 };
@@ -90,7 +93,7 @@ interface CardPlanProps {
 }
 
 export const CardPlan = ({ children, className }: CardPlanProps) => {
-  const classes = clsx("", className);
+  const classes = clsx("text-sm", className);
 
   return <div className={classes}>{children}</div>;
 };
@@ -101,9 +104,12 @@ interface CardPaymentProps {
 }
 
 export const CardPayment = ({ children, className }: CardPaymentProps) => {
-  const classes = clsx("", className);
+  const classes = clsx(
+    "bg-primary-order-bright-blue text-white px-24 py-2 rounded-lg drop-shadow-xl",
+    className
+  );
 
-  return <button className={classes}>{children}</button>;
+  return <Button className={classes}>{children}</Button>;
 };
 
 interface CardCancellationProps {
@@ -115,9 +121,31 @@ export const CardCancellation = ({
   children,
   className,
 }: CardCancellationProps) => {
-  const classes = clsx("", className);
+  const classes = clsx("text-neutral-order-desaturated-blue", className);
+
+  return <Button className={classes}>{children}</Button>;
+};
+
+interface ButtonProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export const Button = ({ children, className }: ButtonProps) => {
+  const classes = clsx("text-sm", className);
 
   return <button className={classes}>{children}</button>;
+};
+
+interface OrderProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export const Order = ({ children, className }: OrderProps) => {
+  const classes = clsx("text-sm space-y-4 font-medium", className);
+
+  return <div className={classes}>{children}</div>;
 };
 
 const OrderSummaryCard = () => {
@@ -133,29 +161,48 @@ const OrderSummaryCard = () => {
         <Link href="/">Back to Projects</Link>
       </nav>
       <div className="max-w-screen-max mx-auto h-screen bg-primary-order-pale-blue">
-        <Card>
-          <CardImage
-            src="/assets/img/projects/order-summary-card/illustration-hero.svg"
-            alt="Woman dancing to music"
-            width={400}
-            height={300}
-            className=""
-          />
-          <CardContent>
-            <CardTitle>Order Summary</CardTitle>
-            <CardDescription>
-              You can now listen to millions of songs, audiobooks, and podcasts
-              on any device anywhere you like!
-            </CardDescription>
-            <div>
-              <h6>Annual Plan</h6>
-              <span>$59.99/year</span>
-              <button>Change</button>
-            </div>
-            <CardPayment>Proceed to Payment</CardPayment>
-            <CardCancellation>Cancel Order</CardCancellation>
-          </CardContent>
-        </Card>
+        <div className="py-24">
+          <Card>
+            <CardImage
+              src="/assets/img/projects/order-summary-card/illustration-hero.svg"
+              alt="Woman dancing to music"
+              width={400}
+              height={150}
+            />
+            <CardContent>
+              <CardTitle>Order Summary</CardTitle>
+              <CardDescription>
+                You can now listen to millions of songs, audiobooks, and
+                podcasts on any device anywhere you like!
+              </CardDescription>
+              <div className="flex p-4 bg-primary-order-pale-blue bg-opacity-30 rounded-lg space-x-4">
+                <Image
+                  src="/assets/img/projects/order-summary-card/icon-music.svg"
+                  alt="Music icon"
+                  width={40}
+                  height={12}
+                />
+                <CardPlan>
+                  <h6 className="font-bold">Annual Plan</h6>
+                  <span className="text-neutral-order-desaturated-blue">
+                    $59.99/year
+                  </span>
+                </CardPlan>
+                <Button className="text-primary-order-bright-blue underline font-bold pl-16 hover:no-underline hover:text-opacity-50">
+                  Change
+                </Button>
+              </div>
+              <Order>
+                <CardPayment className="hover:bg-opacity-70 hover:text-white">
+                  Proceed to Payment
+                </CardPayment>
+                <CardCancellation className="hover:text-black">
+                  Cancel Order
+                </CardCancellation>
+              </Order>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </>
   );
