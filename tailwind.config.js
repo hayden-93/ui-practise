@@ -26,6 +26,12 @@ module.exports = {
       body: ["Fraunces", "Outfit", "Red Hat Display"],
     },
     extend: {
+      backgroundImage: {
+        "order-summary-pattern-mobile":
+          "url(/assets/img/projects/order-summary-card/pattern-background-mobile.svg)",
+        "order-summary-pattern-desktop":
+          "url(/assets/img/projects/order-summary-card/pattern-background-desktop.svg)",
+      },
       colors: {
         primary: {
           "dark-cyan": "hsl(158, 36%, 37%)",
