@@ -143,7 +143,7 @@ interface OrderProps {
 }
 
 export const Order = ({ children, className }: OrderProps) => {
-  const classes = clsx("text-sm space-y-4 font-medium", className);
+  const classes = clsx("text-sm space-y-6 font-medium", className);
 
   return <div className={classes}>{children}</div>;
 };
@@ -193,10 +193,10 @@ const OrderSummaryCard = () => {
                 </Button>
               </div>
               <Order>
-                <CardPayment className="hover:bg-opacity-70 hover:text-white">
+                <CardPayment className="py-4 hover:bg-opacity-70 hover:text-white">
                   Proceed to Payment
                 </CardPayment>
-                <CardCancellation className="hover:text-black">
+                <CardCancellation className="font-bold hover:text-black">
                   Cancel Order
                 </CardCancellation>
               </Order>
