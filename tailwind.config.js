@@ -22,8 +22,8 @@ module.exports = {
       sky: colors.sky,
     },
     fontFamily: {
-      display: ["Montserrat"],
-      body: ["Fraunces", "Outfit", "Red Hat Display"],
+      display: ["Montserrat", "Big Shoulders Display"],
+      body: ["Fraunces", "Outfit", "Red Hat Display", "Lexend Deca"],
     },
     extend: {
       backgroundImage: {
@@ -40,6 +40,9 @@ module.exports = {
           "nft-cyan": "hsl(178, 100%, 50%)",
           "order-pale-blue": "hsl(225, 100%, 94%)",
           "order-bright-blue": "hsl(245, 75%, 52%)",
+          "3column-orange": "hsl(31, 77%, 52%)",
+          "3column-cyan": "hsl(184, 100%, 22%)",
+          "3column-dark-cyan": "hsl(179, 100%, 13%)",
         },
         neutral: {
           "dark-blue": "hsl(212, 21%, 14%)",
@@ -50,6 +53,8 @@ module.exports = {
           "order-very-pale-blue": "hsl(225, 100%, 98%)",
           "order-desaturated-blue": "hsl(224, 23%, 55%)",
           "order-very-pale-blue": "hsl(223, 47%, 23%)",
+          "3column-transparent-white": "hsla(0, 0%, 100%, 0.75)",
+          "3column-very-light-gray": "hsl(0, 0%, 95%)",
         },
         "qrc-light-gray": "hsl(212, 45%, 89%)",
         "qrc-grayish-blue": "hsl(220, 15%, 55%)",
