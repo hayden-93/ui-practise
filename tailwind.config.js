@@ -18,7 +18,13 @@ module.exports = {
     },
     fontFamily: {
       display: ["Montserrat", "Big Shoulders Display", "Inter"],
-      body: ["Fraunces", "Outfit", "Red Hat Display", "Lexend Deca"],
+      body: [
+        "Fraunces",
+        "Outfit",
+        "Red Hat Display",
+        "Lexend Deca",
+        "Kumbh Sans",
+      ],
     },
     extend: {
       screens: {
@@ -32,6 +38,8 @@ module.exports = {
           "url(/assets/img/projects/order-summary-card/pattern-background-mobile.svg)",
         "order-summary-pattern-desktop":
           "url(/assets/img/projects/order-summary-card/pattern-background-desktop.svg)",
+        "profile-card":
+          "url(/assets/img/projects/profile-card/bg-pattern-card.svg)",
       },
       colors: {
         primary: {
