@@ -8,12 +8,6 @@ module.exports = {
     "./src/layout/**/*.{ts,tsx}",
   ],
   theme: {
-    screens: {
-      m: "375px",
-      t: "640px",
-      d: "1024px",
-      max: "1280px",
-    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
@@ -27,6 +21,12 @@ module.exports = {
       body: ["Fraunces", "Outfit", "Red Hat Display", "Lexend Deca"],
     },
     extend: {
+      screens: {
+        m: "375px",
+        t: "640px",
+        d: "1024px",
+        max: "1280px",
+      },
       backgroundImage: {
         "order-summary-pattern-mobile":
           "url(/assets/img/projects/order-summary-card/pattern-background-mobile.svg)",

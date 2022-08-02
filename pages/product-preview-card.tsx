@@ -12,7 +12,7 @@ interface ButtonProps {
 }
 
 export const Button = ({ children, className }: ButtonProps) => {
-  const classes = ["text-white font-display rounded-lg py-3 md:px-4", className]
+  const classes = ["text-white font-display rounded-lg py-3 d:px-4", className]
     .join(" ")
     .trim();
   return <button className={classes}>{children}</button>;
@@ -25,7 +25,7 @@ interface CategoryProps {
 
 export const Category = ({ children, className }: CategoryProps) => {
   const classes = [
-    "text-sm text-neutral-dark-grayish-blue font-display tracking-widest uppercase md:px-4",
+    "text-sm text-neutral-dark-grayish-blue font-display tracking-widest uppercase d:px-4",
     className,
   ]
     .join(" ")
@@ -41,7 +41,7 @@ interface DescriptionProps {
 
 export const Description = ({ children, className }: DescriptionProps) => {
   const classes = [
-    "text-neutral-dark-grayish-blue font-display text-sm md:px-4 md:text-md md:leading-relaxed",
+    "text-neutral-dark-grayish-blue font-display text-sm d:px-4 d:text-md d:leading-relaxed",
     className,
   ]
     .join(" ")
@@ -70,7 +70,7 @@ export const ProductImage = ({
   className,
   ...props
 }: ProductImageProps) => {
-  const classes = ["rounded-t-lg md:rounded-r-none md:rounded-l-lg", className]
+  const classes = ["rounded-t-lg d:rounded-r-none d:rounded-l-lg", className]
     .join(" ")
     .trim();
 
@@ -91,40 +91,40 @@ const ProductPreviewCard = () => {
           <Link href="/">Back to Projects</Link>
         </nav>
         <div className="bg-primary-cream flex h-screen justify-center items-center">
-          <div className="max-w-screen-m mx-auto p-6 md:max-w-screen-md">
-            <div className="bg-white rounded-lg md:grid md:grid-cols-2">
+          <div className="max-w-screen-m mx-auto p-6 d:max-w-screen-md">
+            <div className="bg-white rounded-lg d:grid d:grid-cols-2">
               <ProductImage
                 src="/assets/img/projects/product-preview-card/product-mobile.jpeg"
                 alt="Perfume bottle"
                 width={480}
                 height={686}
-                className="md:hidden"
+                className="d:hidden"
               />
               <ProductImage
                 src="/assets/img/projects/product-preview-card/product-desktop.jpeg"
                 alt="Perfume bottle"
                 width={600}
                 height={900}
-                className="hidden md:block h-full"
+                className="hidden d:block h-full"
               />
-              <div className="p-5 space-y-4 md:space-y-10">
+              <div className="p-5 space-y-4 d:space-y-10">
                 <Category>Perfume</Category>
-                <h2 className="text-neutral-dark-blue text-3xl font-bold font-body md:text-5xl md:px-4">
+                <h2 className="text-neutral-dark-blue text-3xl font-bold font-body d:text-5xl d:px-4">
                   Gabrielle Essence Eau De Parfum
                 </h2>
                 <Description>
                   A floral, solar and voluptuous interpretation composed by
                   Olivier Polge, Perfumer-Creator for the House of CHANEL.
                 </Description>
-                <div className="flex space-x-3 md:px-4 md:space-x-6">
-                  <Price className="text-primary-dark-cyan text-3xl font-body font-bold md:text-4xl">
+                <div className="flex space-x-3 d:px-4 d:space-x-6">
+                  <Price className="text-primary-dark-cyan text-3xl font-body font-bold d:text-4xl">
                     $149.99
                   </Price>
                   <Price className="text-neutral-dark-grayish-blue text-sm line-through self-center">
                     $169.99
                   </Price>
                 </div>
-                <div className="flex justify-center py-2 bg-primary-dark-cyan font-body font-medium rounded-lg space-x-2 md:px-4">
+                <div className="flex justify-center py-2 bg-primary-dark-cyan font-body font-medium rounded-lg space-x-2 d:px-4">
                   <Image
                     width={24}
                     height={24}
