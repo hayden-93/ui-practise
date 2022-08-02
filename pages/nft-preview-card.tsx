@@ -12,7 +12,7 @@ interface CardProps {
 
 export const Card = ({ children, className }: CardProps) => {
   const classes = [
-    "group max-w-screen-mobile mx-auto bg-neutral-nft-card-dark-blue shadow-2xl p-6 rounded-xl space-y-4 hover:cursor-pointer",
+    "group max-w-screen-m mx-auto bg-neutral-nft-card-dark-blue shadow-2xl p-6 rounded-xl space-y-4 hover:cursor-pointer",
     className,
   ]
     .join(" ")

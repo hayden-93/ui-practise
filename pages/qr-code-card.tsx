@@ -51,7 +51,7 @@ const QRCodeCard = () => {
           <Link href="/">Back to Projects</Link>
         </nav>
         <div className="bg-qrc-light-gray h-screen py-10">
-          <div className="max-w-screen-mobile mx-auto bg-white rounded-2xl p-5 space-y-4">
+          <div className="max-w-screen-m mx-auto bg-white rounded-2xl p-5 space-y-4">
             <Image
               width={600}
               height={600}

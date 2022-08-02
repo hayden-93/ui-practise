@@ -91,7 +91,7 @@ const ProductPreviewCard = () => {
           <Link href="/">Back to Projects</Link>
         </nav>
         <div className="bg-primary-cream flex h-screen justify-center items-center">
-          <div className="max-w-screen-mobile mx-auto p-6 md:max-w-screen-md">
+          <div className="max-w-screen-m mx-auto p-6 md:max-w-screen-md">
             <div className="bg-white rounded-lg md:grid md:grid-cols-2">
               <ProductImage
                 src="/assets/img/projects/product-preview-card/product-mobile.jpeg"

@@ -9,6 +9,7 @@ module.exports = {
   ],
   theme: {
     screens: {
+      m: "375px",
       t: "640px",
       d: "1024px",
       max: "1280px",
@@ -22,8 +23,8 @@ module.exports = {
       sky: colors.sky,
     },
     fontFamily: {
-      display: ["Montserrat", "Big Shoulders Display"],
-      body: ["Fraunces", "Outfit", "Red Hat Display", "Lexend Deca", "Inter"],
+      display: ["Montserrat", "Big Shoulders Display", "Inter"],
+      body: ["Fraunces", "Outfit", "Red Hat Display", "Lexend Deca"],
     },
     extend: {
       backgroundImage: {
@@ -58,18 +59,14 @@ module.exports = {
           "order-very-pale-blue": "hsl(223, 47%, 23%)",
           "3column-transparent-white": "hsla(0, 0%, 100%, 0.75)",
           "3column-very-light-gray": "hsl(0, 0%, 95%)",
-          "stats-violet": "hsla(0, 0%, 100%, 0.75)",
-          "stats-violet": "hsla(0, 0%, 100%, 0.6)",
+          "stats-transparent-p": "hsla(0, 0%, 100%, 0.75)",
+          "stats-transparent-heading": "hsla(0, 0%, 100%, 0.6)",
         },
         "qrc-light-gray": "hsl(212, 45%, 89%)",
         "qrc-grayish-blue": "hsl(220, 15%, 55%)",
         "qrc-dark-blue": "hsl(218, 44%, 22%)",
       },
-      screens: {
-        mobile: "375px",
-      },
     },
   },
-
   plugins: [],
 };

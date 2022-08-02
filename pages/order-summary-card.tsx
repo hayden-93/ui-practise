@@ -12,10 +12,7 @@ interface CardProps {
 }
 
 export const Card = ({ children, className }: CardProps) => {
-  const classes = clsx(
-    "max-w-screen-mobile mx-auto rounded-xl bg-white",
-    className
-  );
+  const classes = clsx("max-w-screen-m mx-auto rounded-xl bg-white", className);
 
   return <div className={classes}>{children}</div>;
 };

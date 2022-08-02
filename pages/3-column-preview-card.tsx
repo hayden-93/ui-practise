@@ -101,7 +101,7 @@ const ColumnCardPreview = () => {
         <Link href="/">Back to Projects</Link>
       </nav>
       <section className="max-w-screen-max mx-auto">
-        <ul className="grid max-w-screen-mobile mx-auto rounded-xl overflow-hidden d:grid-cols-3 d:max-w-screen-d">
+        <ul className="grid max-w-screen-m mx-auto rounded-xl overflow-hidden d:grid-cols-3 d:max-w-screen-d">
           {vehicles.map((props) => (
             <VehicleProfile key={props.id} {...props} />
           ))}
