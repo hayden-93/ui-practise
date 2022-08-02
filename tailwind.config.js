@@ -23,7 +23,7 @@ module.exports = {
     },
     fontFamily: {
       display: ["Montserrat", "Big Shoulders Display"],
-      body: ["Fraunces", "Outfit", "Red Hat Display", "Lexend Deca"],
+      body: ["Fraunces", "Outfit", "Red Hat Display", "Lexend Deca", "Inter"],
     },
     extend: {
       backgroundImage: {
@@ -43,6 +43,9 @@ module.exports = {
           "3column-orange": "hsl(31, 77%, 52%)",
           "3column-cyan": "hsl(184, 100%, 22%)",
           "3column-dark-cyan": "hsl(179, 100%, 13%)",
+          "stats-dark-blue": "hsl(233, 47%, 7%)",
+          "stats-desaturated-blue": "hsl(244, 38%, 16%)",
+          "stats-violet": "hsl(277, 64%, 61%)",
         },
         neutral: {
           "dark-blue": "hsl(212, 21%, 14%)",
@@ -55,6 +58,8 @@ module.exports = {
           "order-very-pale-blue": "hsl(223, 47%, 23%)",
           "3column-transparent-white": "hsla(0, 0%, 100%, 0.75)",
           "3column-very-light-gray": "hsl(0, 0%, 95%)",
+          "stats-violet": "hsla(0, 0%, 100%, 0.75)",
+          "stats-violet": "hsla(0, 0%, 100%, 0.6)",
         },
         "qrc-light-gray": "hsl(212, 45%, 89%)",
         "qrc-grayish-blue": "hsl(220, 15%, 55%)",
