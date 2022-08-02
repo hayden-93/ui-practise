@@ -47,6 +47,9 @@ module.exports = {
           "stats-dark-blue": "hsl(233, 47%, 7%)",
           "stats-desaturated-blue": "hsl(244, 38%, 16%)",
           "stats-violet": "hsl(277, 64%, 61%)",
+          "profile-cyan": "hsl(185, 75%, 39%)",
+          "profile-dark-blue": "hsl(229, 23%, 23%)",
+          "profile-dark-grayish-blue": "hsl(227, 10%, 46%)",
         },
         neutral: {
           "dark-blue": "hsl(212, 21%, 14%)",
@@ -61,6 +64,7 @@ module.exports = {
           "3column-very-light-gray": "hsl(0, 0%, 95%)",
           "stats-transparent-p": "hsla(0, 0%, 100%, 0.75)",
           "stats-transparent-heading": "hsla(0, 0%, 100%, 0.6)",
+          "profile-dark-gray": "hsl(0, 0%, 59%)",
         },
         "qrc-light-gray": "hsl(212, 45%, 89%)",
         "qrc-grayish-blue": "hsl(220, 15%, 55%)",
