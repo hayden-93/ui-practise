@@ -24,6 +24,7 @@ module.exports = {
         "Red Hat Display",
         "Lexend Deca",
         "Kumbh Sans",
+        "League Spartan",
       ],
     },
     extend: {
@@ -58,6 +59,8 @@ module.exports = {
           "profile-cyan": "hsl(185, 75%, 39%)",
           "profile-dark-blue": "hsl(229, 23%, 23%)",
           "profile-dark-grayish-blue": "hsl(227, 10%, 46%)",
+          "social-magenta": "hsl(300, 43%, 22%)",
+          "social-pink": "hsl(333, 80%, 67%)",
         },
         neutral: {
           "dark-blue": "hsl(212, 21%, 14%)",
@@ -73,6 +76,8 @@ module.exports = {
           "stats-transparent-p": "hsla(0, 0%, 100%, 0.75)",
           "stats-transparent-heading": "hsla(0, 0%, 100%, 0.6)",
           "profile-dark-gray": "hsl(0, 0%, 59%)",
+          "social-dark-magenta": "hsl(303, 10%, 53%)",
+          "social-light-magenta": "hsl(300, 24%, 96%)",
         },
         "qrc-light-gray": "hsl(212, 45%, 89%)",
         "qrc-grayish-blue": "hsl(220, 15%, 55%)",
