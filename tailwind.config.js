@@ -25,6 +25,7 @@ module.exports = {
         "Lexend Deca",
         "Kumbh Sans",
         "League Spartan",
+        "Karla",
       ],
     },
     extend: {
@@ -61,6 +62,8 @@ module.exports = {
           "profile-dark-grayish-blue": "hsl(227, 10%, 46%)",
           "social-magenta": "hsl(300, 43%, 22%)",
           "social-pink": "hsl(333, 80%, 67%)",
+          "single-grid-cyan": "hsl(179, 62%, 43%)",
+          "single-grid-yellow": "hsl(71, 73%, 54%)",
         },
         neutral: {
           "dark-blue": "hsl(212, 21%, 14%)",
@@ -78,6 +81,8 @@ module.exports = {
           "profile-dark-gray": "hsl(0, 0%, 59%)",
           "social-dark-magenta": "hsl(303, 10%, 53%)",
           "social-light-magenta": "hsl(300, 24%, 96%)",
+          "single-grid-gray": "hsl(204, 43%, 93%)",
+          "single-grid-blue": "hsl(218, 22% 67%)",
         },
         "qrc-light-gray": "hsl(212, 45%, 89%)",
         "qrc-grayish-blue": "hsl(220, 15%, 55%)",
