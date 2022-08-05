@@ -26,6 +26,7 @@ module.exports = {
         "Kumbh Sans",
         "League Spartan",
         "Karla",
+        "Poppins",
       ],
     },
     extend: {
@@ -64,6 +65,10 @@ module.exports = {
           "social-pink": "hsl(333, 80%, 67%)",
           "single-grid-cyan": "hsl(179, 62%, 43%)",
           "single-grid-yellow": "hsl(71, 73%, 54%)",
+          "four-card-red": "hsl(0, 78%, 62%)",
+          "four-card-cyan": "hsl(180, 62%, 55%)",
+          "four-card-orange": "hsl(34, 97%, 64%)",
+          "four-card-blue": "hsl(212, 86%, 64%)",
         },
         neutral: {
           "dark-blue": "hsl(212, 21%, 14%)",
@@ -83,6 +88,9 @@ module.exports = {
           "social-light-magenta": "hsl(300, 24%, 96%)",
           "single-grid-gray": "hsl(204, 43%, 93%)",
           "single-grid-blue": "hsl(218, 22% 67%)",
+          "four-card-dark-blue": "hsl(234, 12%, 34%)",
+          "four-card-blue": "hsl(229, 6%, 66%)",
+          "four-card-gray": "hsl(0, 0%, 98%)",
         },
         "qrc-light-gray": "hsl(212, 45%, 89%)",
         "qrc-grayish-blue": "hsl(220, 15%, 55%)",
