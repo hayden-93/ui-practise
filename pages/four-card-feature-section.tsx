@@ -103,45 +103,6 @@ const FourCardFeature = () => {
           </ul>
         </section>
       </div>
-
-      {/* <div className="max-w-screen-max mx-auto bg-neutral-four-card-gray font-body py-24">
-        <div className="max-w-screen-m mx-auto">
-          <h2 className="text-center">Reliable, efficient delivery</h2>
-          <h2 className="text-center">Powered by Technology</h2>
-          <p className="">
-            Our Artificial Intelligence powered tools use millions of project
-            data points to ensure that your project is successful
-          </p>
-          <div className="grid grid-cols-1 gap-8">
-            <div className="bg-white rounded-lg border-t-4 border-t-primary-four-card-cyan drop-shadow-2xl">
-              <h3 className="">Supervisor</h3>
-              <span className="">
-                Monitors activity to identify project roadblocks
-              </span>
-            </div>
-            <div className="bg-white rounded-lg border-t-4 border-t-primary-four-card-red drop-shadow-2xl">
-              <h3 className="">Team Builder</h3>
-              <span className="">
-                Scans our talent network to create the optimal team for your
-                project
-              </span>
-            </div>
-            <div className="bg-white rounded-lg border-t-4 border-t-primary-four-card-orange drop-shadow-2xl">
-              <h3 className="">Karma</h3>
-              <span className="">
-                Regularly evaluates our talent to ensure quality
-              </span>
-            </div>
-            <div className="bg-white rounded-lg border-t-4 border-t-primary-four-card-blue drop-shadow-2xl">
-              <h3 className="">Calculator</h3>
-              <span className="">
-                Uses data from past projects to provide better delivery
-                estimates
-              </span>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 };
