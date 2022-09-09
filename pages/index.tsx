@@ -3,8 +3,8 @@ import type { ImageProps } from "next/future/image";
 
 import { memo } from "react";
 
-import { Image, Link } from "../src/components";
-import projects from "../src/data/projects.json";
+import projects from "@/data/projects.json";
+import { Image, Link } from "@/components";
 
 interface PreviewCardProps {
   alt: string;
